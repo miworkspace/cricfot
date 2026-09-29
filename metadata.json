@@ -1,0 +1,6 @@
+{
+  "name": "CricFot",
+  "description": "Production-ready digital sports newspaper and news platform covering Cricket and Football with a focus on Bangladesh and international sports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

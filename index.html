@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Safeguard against environments where window.fetch has only a getter
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          if (typeof originalFetch === 'function') {
+            var _currentFetch = originalFetch;
+            Object.defineProperty(window, 'fetch', {
+              get: function() {
+                return _currentFetch;
+              },
+              set: function(newFetch) {
+                _currentFetch = newFetch;
+              },
+              configurable: true,
+              enumerable: true
+            });
+          }
+        } catch (e) {
+          // If defining on window fails, attempt on Window.prototype
+          try {
+            if (typeof Window !== 'undefined' && Window.prototype) {
+              var _protoFetch = Window.prototype.fetch;
+              Object.defineProperty(Window.prototype, 'fetch', {
+                get: function() {
+                  return _protoFetch;
+                },
+                set: function(newFetch) {
+                  _protoFetch = newFetch;
+                },
+                configurable: true,
+                enumerable: true
+              });
+            }
+          } catch (err) {}
+        }
+      })();
+    </script>
+    <title>CricFot | Cricket & Football News, Live & Updated</title>
+    <meta name="description" content="Production-ready digital sports newspaper and news platform covering Cricket and Football with a focus on Bangladesh and international sports." />
+    <meta name="keywords" content="CricFot, Cricket News, Football News, Bangladesh Cricket, Tigers, BPL, UEFA Champions League, Live Score, Sports Newspaper" />
+    <meta property="og:title" content="CricFot | Cricket & Football News, Live & Updated" />
+    <meta property="og:description" content="Production-ready digital sports newspaper and news platform covering Cricket and Football with a focus on Bangladesh and international sports." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CricFot" />
+    <meta property="og:locale" content="bn_BD" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CricFot | Cricket & Football News, Live & Updated" />
+    <meta name="twitter:description" content="Production-ready digital sports newspaper and news platform covering Cricket and Football with a focus on Bangladesh and international sports." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Noto+Sans+Bengali:wght@400;500;600;700;800&family=Noto+Serif+Bengali:wght@400;600;700&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsMediaOrganization",
+      "name": "CricFot",
+      "url": "https://cricfot.com",
+      "logo": "https://cricfot.com/logo.png",
+      "description": "Production-ready digital sports newspaper and news platform covering Cricket and Football with a focus on Bangladesh and international sports.",
+      "sameAs": [
+        "https://facebook.com/cricfot",
+        "https://twitter.com/cricfot"
+      ],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cricfot.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-neutral-50 text-neutral-900 antialiased selection:bg-emerald-600 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
