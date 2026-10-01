@@ -12,7 +12,6 @@ export const RouterProvider = ({ children }) => {
 export function useRouter() {
   const nextRouter = useNextRouter();
   const pathname = usePathname() || '/';
-  const searchParams = useSearchParams();
 
   const route = useMemo(() => {
     let name = 'home';
@@ -31,9 +30,8 @@ export function useRouter() {
       name,
       path: clean,
       params,
-      searchParams: searchParams || new URLSearchParams(),
     };
-  }, [pathname, searchParams]);
+  }, [pathname]);
 
   const navigate = (to, options) => {
     if (options?.replace) {
@@ -53,4 +51,8 @@ export function useRouter() {
     forward: () => nextRouter.forward(),
     refresh: () => nextRouter.refresh(),
   };
+}
+
+export function useRouteSearchParams() {
+  return useSearchParams();
 }

@@ -1,1 +1,284 @@
-{"version":3,"caseSensitive":false,"basePath":"","rewrites":{"beforeFiles":[],"afterFiles":[],"fallback":[]},"redirects":[{"source":"/:path+/","destination":"/:path+","permanent":true,"internal":true,"regex":"^(?:\\/((?:[^\\/]+?)(?:\\/(?:[^\\/]+?))*))\\/$"}],"headers":[]}
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/admin/articles/[id]/edit",
+      "regex": "^/admin/articles/([^/]+?)/edit(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/articles/(?<nxtPid>[^/]+?)/edit(?:/)?$"
+    },
+    {
+      "page": "/admin/articles/[id]/preview",
+      "regex": "^/admin/articles/([^/]+?)/preview(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/articles/(?<nxtPid>[^/]+?)/preview(?:/)?$"
+    },
+    {
+      "page": "/admin/users/[id]/edit",
+      "regex": "^/admin/users/([^/]+?)/edit(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/users/(?<nxtPid>[^/]+?)/edit(?:/)?$"
+    },
+    {
+      "page": "/api/articles/[slug]",
+      "regex": "^/api/articles/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/api/articles/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/news/[slug]",
+      "regex": "^/news/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/news/(?<nxtPslug>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
+    },
+    {
+      "page": "/admin/articles",
+      "regex": "^/admin/articles(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/articles(?:/)?$"
+    },
+    {
+      "page": "/admin/articles/new",
+      "regex": "^/admin/articles/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/articles/new(?:/)?$"
+    },
+    {
+      "page": "/admin/breaking",
+      "regex": "^/admin/breaking(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/breaking(?:/)?$"
+    },
+    {
+      "page": "/admin/categories",
+      "regex": "^/admin/categories(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/categories(?:/)?$"
+    },
+    {
+      "page": "/admin/competitions",
+      "regex": "^/admin/competitions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/competitions(?:/)?$"
+    },
+    {
+      "page": "/admin/featured",
+      "regex": "^/admin/featured(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/featured(?:/)?$"
+    },
+    {
+      "page": "/admin/login",
+      "regex": "^/admin/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/login(?:/)?$"
+    },
+    {
+      "page": "/admin/logs",
+      "regex": "^/admin/logs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/logs(?:/)?$"
+    },
+    {
+      "page": "/admin/matches",
+      "regex": "^/admin/matches(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/matches(?:/)?$"
+    },
+    {
+      "page": "/admin/media",
+      "regex": "^/admin/media(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/media(?:/)?$"
+    },
+    {
+      "page": "/admin/settings",
+      "regex": "^/admin/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/settings(?:/)?$"
+    },
+    {
+      "page": "/admin/tags",
+      "regex": "^/admin/tags(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/tags(?:/)?$"
+    },
+    {
+      "page": "/admin/teams",
+      "regex": "^/admin/teams(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/teams(?:/)?$"
+    },
+    {
+      "page": "/admin/trending",
+      "regex": "^/admin/trending(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/trending(?:/)?$"
+    },
+    {
+      "page": "/admin/users",
+      "regex": "^/admin/users(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/users(?:/)?$"
+    },
+    {
+      "page": "/admin/users/new",
+      "regex": "^/admin/users/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/users/new(?:/)?$"
+    },
+    {
+      "page": "/admin/videos",
+      "regex": "^/admin/videos(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/videos(?:/)?$"
+    },
+    {
+      "page": "/analysis",
+      "regex": "^/analysis(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/analysis(?:/)?$"
+    },
+    {
+      "page": "/api/ads",
+      "regex": "^/api/ads(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/ads(?:/)?$"
+    },
+    {
+      "page": "/api/articles",
+      "regex": "^/api/articles(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/articles(?:/)?$"
+    },
+    {
+      "page": "/api/categories",
+      "regex": "^/api/categories(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/categories(?:/)?$"
+    },
+    {
+      "page": "/api/health",
+      "regex": "^/api/health(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/health(?:/)?$"
+    },
+    {
+      "page": "/cricket",
+      "regex": "^/cricket(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cricket(?:/)?$"
+    },
+    {
+      "page": "/football",
+      "regex": "^/football(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/football(?:/)?$"
+    },
+    {
+      "page": "/live",
+      "regex": "^/live(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/live(?:/)?$"
+    },
+    {
+      "page": "/matches",
+      "regex": "^/matches(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/matches(?:/)?$"
+    },
+    {
+      "page": "/results",
+      "regex": "^/results(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/results(?:/)?$"
+    },
+    {
+      "page": "/search",
+      "regex": "^/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/search(?:/)?$"
+    },
+    {
+      "page": "/videos",
+      "regex": "^/videos(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/videos(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
