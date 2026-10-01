@@ -10,8 +10,7 @@ export default function Page({ params }) {
       try {
         const resolved = use(params);
         slug = resolved.slug;
-      } catch {
-      }
+      } catch {}
     } else {
       slug = params.slug;
     }

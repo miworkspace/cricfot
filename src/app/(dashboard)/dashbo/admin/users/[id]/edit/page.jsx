@@ -10,8 +10,7 @@ export default function Page({ params }) {
       try {
         const resolved = use(params);
         id = resolved.id;
-      } catch {
-      }
+      } catch {}
     } else {
       id = params.id;
     }
