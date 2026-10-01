@@ -23,36 +23,36 @@
   },
   "dynamicRoutes": [
     {
-      "page": "/admin/articles/[id]/edit",
-      "regex": "^/admin/articles/([^/]+?)/edit(?:/)?$",
-      "routeKeys": {
-        "nxtPid": "nxtPid"
-      },
-      "namedRegex": "^/admin/articles/(?<nxtPid>[^/]+?)/edit(?:/)?$"
-    },
-    {
-      "page": "/admin/articles/[id]/preview",
-      "regex": "^/admin/articles/([^/]+?)/preview(?:/)?$",
-      "routeKeys": {
-        "nxtPid": "nxtPid"
-      },
-      "namedRegex": "^/admin/articles/(?<nxtPid>[^/]+?)/preview(?:/)?$"
-    },
-    {
-      "page": "/admin/users/[id]/edit",
-      "regex": "^/admin/users/([^/]+?)/edit(?:/)?$",
-      "routeKeys": {
-        "nxtPid": "nxtPid"
-      },
-      "namedRegex": "^/admin/users/(?<nxtPid>[^/]+?)/edit(?:/)?$"
-    },
-    {
       "page": "/api/articles/[slug]",
       "regex": "^/api/articles/([^/]+?)(?:/)?$",
       "routeKeys": {
         "nxtPslug": "nxtPslug"
       },
       "namedRegex": "^/api/articles/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/articles/[id]/edit",
+      "regex": "^/dashbo/admin/articles/([^/]+?)/edit(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/dashbo/admin/articles/(?<nxtPid>[^/]+?)/edit(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/articles/[id]/preview",
+      "regex": "^/dashbo/admin/articles/([^/]+?)/preview(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/dashbo/admin/articles/(?<nxtPid>[^/]+?)/preview(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/users/[id]/edit",
+      "regex": "^/dashbo/admin/users/([^/]+?)/edit(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/dashbo/admin/users/(?<nxtPid>[^/]+?)/edit(?:/)?$"
     },
     {
       "page": "/news/[slug]",
@@ -81,114 +81,6 @@
       "regex": "^/_not\\-found(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/_not\\-found(?:/)?$"
-    },
-    {
-      "page": "/admin",
-      "regex": "^/admin(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin(?:/)?$"
-    },
-    {
-      "page": "/admin/articles",
-      "regex": "^/admin/articles(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/articles(?:/)?$"
-    },
-    {
-      "page": "/admin/articles/new",
-      "regex": "^/admin/articles/new(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/articles/new(?:/)?$"
-    },
-    {
-      "page": "/admin/breaking",
-      "regex": "^/admin/breaking(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/breaking(?:/)?$"
-    },
-    {
-      "page": "/admin/categories",
-      "regex": "^/admin/categories(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/categories(?:/)?$"
-    },
-    {
-      "page": "/admin/competitions",
-      "regex": "^/admin/competitions(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/competitions(?:/)?$"
-    },
-    {
-      "page": "/admin/featured",
-      "regex": "^/admin/featured(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/featured(?:/)?$"
-    },
-    {
-      "page": "/admin/login",
-      "regex": "^/admin/login(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/login(?:/)?$"
-    },
-    {
-      "page": "/admin/logs",
-      "regex": "^/admin/logs(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/logs(?:/)?$"
-    },
-    {
-      "page": "/admin/matches",
-      "regex": "^/admin/matches(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/matches(?:/)?$"
-    },
-    {
-      "page": "/admin/media",
-      "regex": "^/admin/media(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/media(?:/)?$"
-    },
-    {
-      "page": "/admin/settings",
-      "regex": "^/admin/settings(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/settings(?:/)?$"
-    },
-    {
-      "page": "/admin/tags",
-      "regex": "^/admin/tags(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/tags(?:/)?$"
-    },
-    {
-      "page": "/admin/teams",
-      "regex": "^/admin/teams(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/teams(?:/)?$"
-    },
-    {
-      "page": "/admin/trending",
-      "regex": "^/admin/trending(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/trending(?:/)?$"
-    },
-    {
-      "page": "/admin/users",
-      "regex": "^/admin/users(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/users(?:/)?$"
-    },
-    {
-      "page": "/admin/users/new",
-      "regex": "^/admin/users/new(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/users/new(?:/)?$"
-    },
-    {
-      "page": "/admin/videos",
-      "regex": "^/admin/videos(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/admin/videos(?:/)?$"
     },
     {
       "page": "/analysis",
@@ -225,6 +117,114 @@
       "regex": "^/cricket(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/cricket(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin",
+      "regex": "^/dashbo/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/articles",
+      "regex": "^/dashbo/admin/articles(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/articles(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/articles/new",
+      "regex": "^/dashbo/admin/articles/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/articles/new(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/breaking",
+      "regex": "^/dashbo/admin/breaking(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/breaking(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/categories",
+      "regex": "^/dashbo/admin/categories(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/categories(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/competitions",
+      "regex": "^/dashbo/admin/competitions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/competitions(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/featured",
+      "regex": "^/dashbo/admin/featured(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/featured(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/login",
+      "regex": "^/dashbo/admin/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/login(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/logs",
+      "regex": "^/dashbo/admin/logs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/logs(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/matches",
+      "regex": "^/dashbo/admin/matches(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/matches(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/media",
+      "regex": "^/dashbo/admin/media(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/media(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/settings",
+      "regex": "^/dashbo/admin/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/settings(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/tags",
+      "regex": "^/dashbo/admin/tags(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/tags(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/teams",
+      "regex": "^/dashbo/admin/teams(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/teams(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/trending",
+      "regex": "^/dashbo/admin/trending(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/trending(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/users",
+      "regex": "^/dashbo/admin/users(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/users(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/users/new",
+      "regex": "^/dashbo/admin/users/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/users/new(?:/)?$"
+    },
+    {
+      "page": "/dashbo/admin/videos",
+      "regex": "^/dashbo/admin/videos(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashbo/admin/videos(?:/)?$"
     },
     {
       "page": "/football",
