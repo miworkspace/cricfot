@@ -2,10 +2,16 @@
 
 @layer base {
   body {
-    font-family: 'Noto Sans Bengali', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-family: var(--font-noto-sans-bengali), system-ui, -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .font-sans {
+    font-family: var(--font-noto-sans-bengali), system-ui, sans-serif;
   }
 }
 

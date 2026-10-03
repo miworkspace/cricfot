@@ -57,7 +57,7 @@ export const AdminLoginPage = () => {
       if (res.session) {
         setSuccessToast(`Welcome back, ${res.session.user.name}!`);
         setTimeout(() => {
-          navigate("/admin");
+          navigate("/dashbo/admin");
         }, 500);
       }
     } catch (err) {
@@ -99,7 +99,7 @@ export const AdminLoginPage = () => {
         });
         setSuccessToast("SSO Authentication successful with Google Workspace");
         setTimeout(() => {
-          navigate("/admin");
+          navigate("/dashbo/admin");
         }, 400);
       } catch {
         setErrorMessage("Enterprise SSO authentication temporarily unavailable.");
