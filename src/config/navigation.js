@@ -1,7 +1,7 @@
 export const MAIN_NAVIGATION_ITEMS = [
   {
     label: "Home",
-    banglaLabel: "\u09AA\u09CD\u09B0\u099A\u09CD\u099B\u09A6",
+    banglaLabel: "সর্বশেষ",
     href: "/"
   },
   {
@@ -113,7 +113,7 @@ export const MOCK_BREAKING_HEADLINES = [
   }
 ];
 export const TRENDING_TOPICS = [
-  { label: "#\u09AC\u09BF\u09AA\u09BF\u098F\u09B2\u09E8\u09E6\u09E8\u09EC", href: "/search?q=BPL" },
+  // { label: "#\u09AC\u09BF\u09AA\u09BF\u098F\u09B2\u09E8\u09E6\u09E8\u09EC", href: "/search?q=BPL" },
   { label: "#\u099F\u09BE\u0987\u0997\u09BE\u09B0\u09CD\u09B8", href: "/cricket" },
   { label: "#\u099A\u09CD\u09AF\u09BE\u09AE\u09CD\u09AA\u09BF\u09AF\u09BC\u09A8\u09CD\u09B8\u09B2\u09BF\u0997", href: "/football" },
   { label: "#\u09AC\u09BE\u0982\u09B2\u09BE\u09A6\u09C7\u09B6\u09AB\u09C1\u099F\u09AC\u09B2", href: "/football" }
